@@ -253,8 +253,7 @@ https://github.com/crycode-de/mcp-can-boot`)
             this.flashStartTs = Date.now();
             this.can.send({
               id: this.args.canIdRemote,
-              //ext: true,
-		          ext: false,
+              ext: false,
               rtr: false,
               data: Buffer.from([
                 this.mcuId[0],
